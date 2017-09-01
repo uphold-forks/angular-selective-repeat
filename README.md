@@ -5,7 +5,6 @@
 
 Choose your preferred method:
 
-* Bower: `bower install angular-selective-repeat`
 * NPM: `npm install --save angular-selective-repeat`
 * Download: [angular-selective-repeat](https://raw.githubusercontent.com/seegno/angular-selective-repeat/master/dist/angular-selective-repeat.min.js)
 
@@ -14,8 +13,8 @@ Choose your preferred method:
 1. Include `scRepeat` module and dependencies.
 
 ```html
-<script src="bower_components/angular/angular.min.js"></script>
-<script src="bower_components/angular-selective-repeat/dist/angular-selective-repeat.min.js"></script>
+<script src="node_modules/angular/angular.min.js"></script>
+<script src="node_modules/angular-selective-repeat/dist/angular-selective-repeat.min.js"></script>
 ```
 
 2. Inject `scRepeat` module on your angular application:
@@ -48,7 +47,7 @@ class MyController {
     <sc-item sc-item-key="createdAt">
       {{ myCtrl.collection.createdAt | date }}
     </sc-item>
-    
+
     <div ng-repeat="(key, value) in scRepeat.collection track by $index">
       <p>{{ key }}</p>
       <h4>{{ value }}</h4>
